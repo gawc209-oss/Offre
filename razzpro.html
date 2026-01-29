@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazzPro - Rasoir 5 Lames Premium | Douala, Cameroun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-family: Impact, Arial Black, sans-serif;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background: #c1272d;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        .btn-blue {
+            background: #1e3c72;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            font-size: 1.2rem;
+        }
+        .whatsapp-btn i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        .promo {
+            color: #c1272d;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+        .prix-barre {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+        .galerie {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .galerie img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .avis-container {
+            max-width: 700px;
+            margin: 30px auto;
+        }
+        .avis {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-left: 4px solid #1e3c72;
+            font-style: italic;
+            text-align: left;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c1272d;
+        }
+        .qualites {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            padding-left: 20px;
+        }
+        .qualites li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .whatsapp-container {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .pack-info {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: inline-block;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Page d'accueil -->
+    <div id="landing" class="section">
+        <div class="container">
+            <div class="logo">RazzPro</div>
+            <div class="galerie">
+                <img src="https://i.ibb.co/spyRfRBm/pack1revu.jpg" alt="Rasoir 5 lames RazzPro avec 8 recharges" onerror="this.src='https://via.placeholder.com/300x200/1e3c72/ffffff?text=Rasoir+5+lames'">
+            </div>
+            <h1>Pack Rasoir 5 Lames Premium</h1>
+            <p class="promo"><span class="prix-barre">6000 FCFA</span> 4500 FCFA (promo 1 mois)</p>
+            <p>Le rasoir 5 lames le plus doux et précis, avec 8 recharges incluses. Livraison à Douala et expédition dans tout le Cameroun.</p>
+            <div class="btn-container">
+                <button class="btn" onclick="goTo('produit')">Découvrir l'offre</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page produit -->
+    <div id="produit" class="section hidden">
+        <div class="container">
+            <div class="logo">RazzPro</div>
+            <h1>Pack Rasoir 5 Lames + 8 Recharges</h1>
+            <div class="galerie">
+                <img src="https://i.ibb.co/spyRfRBm/pack1revu.jpg" alt="Rasoir 5 lames RazzPro" onerror="this.src='https://via.placeholder.com/200x150/1e3c72/ffffff?text=Rasoir+5+lames'">
+                <img src="https://i.ibb.co/bgCC7bP6/2.jpg" alt="Pack RazzPro avec 8 recharges" onerror="this.src='https://via.placeholder.com/200x150/1e3c72/ffffff?text=Pack+RazzPro'">
+            </div>
+            <div class="pack-info">
+                <i class="fas fa-ruler-horizontal"></i> 14.2 cm | <i class="fas fa-box"></i> 1 pack de 8 lames
+            </div>
+
+            <h2>Pourquoi choisir notre rasoir 5 lames ?</h2>
+            <div class="qualites">
+                <ul>
+                    <li><span class="highlight">Précision optimale</span> : 5 lames ultra-affûtées pour un rasage net dès le premier passage.</li>
+                    <li><span class="highlight">Confort exceptionnel</span> : Bande lubrifiante à l'aloe vera pour éviter les irritations.</li>
+                    <li><span class="highlight">Durabilité</span> : Lames en acier inoxydable, résistantes à la rouille et à l'usure.</li>
+                    <li><span class="highlight">Manche ergonomique</span> : Conçu pour une prise en main facile et un contrôle parfait.</li>
+                    <li><span class="highlight">Économique</span> : 8 recharges incluses pour plusieurs mois d'utilisation.</li>
+                </ul>
+            </div>
+
+            <p><span class="prix-barre">6000 FCFA</span> <span class="promo">4500 FCFA</span> (promo 1 mois)</p>
+            <p><strong>Offre spéciale :</strong> Achetez 2 packs, chaque pack à <span class="highlight">4000 FCFA</span> seulement !</p>
+
+            <div class="btn-container">
+                <button class="btn btn-blue" onclick="goTo('avis')">Voir les avis clients</button>
+                <button class="btn" onclick="goTo('commande')">Commander maintenant</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page avis -->
+    <div id="avis" class="section hidden">
+        <div class="container">
+            <div class="logo">RazzPro</div>
+            <h1>Avis de nos clients</h1>
+            <div class="galerie">
+                <img src="https://i.ibb.co/jvHK5SSP/3.jpg" alt="Rasoirs RazzPro" onerror="this.src='https://via.placeholder.com/200x150/1e3c72/ffffff?text=Avis+RazzPro'">
+            </div>
+            <div class="avis-container">
+                <div class="avis">
+                    <p>"Je recommande à 100% ! Rasage ultra-doux, pas d'irritation, et les recharges durent longtemps." - Paul, Douala</p>
+                </div>
+                <div class="avis">
+                    <p>"Depuis que j'utilise RazzPro, je n'achète plus de rasoirs en supermarché. Le rapport qualité-prix est imbattable !" - Marie, Yaoundé</p>
+                </div>
+                <div class="avis">
+                    <p>"Livraison rapide et produit conforme à la description. Très satisfait de mon achat !" - Jean, Douala</p>
+                </div>
+                <div class="avis">
+                    <p>"Le rasoir glisse parfaitement sur la peau, même les zones sensibles. Enfin un produit qui tient ses promesses !" - Sophie, Bafoussam</p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-blue" onclick="goTo('produit')">Retour au produit</button>
+                <button class="btn" onclick="goTo('commande')">Commander maintenant</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page commande -->
+    <div id="commande" class="section hidden">
+        <div class="container">
+            <div class="logo">RazzPro</div>
+            <h1>Passez votre commande</h1>
+            <div class="galerie">
+                <img src="https://i.ibb.co/bgCC7bP6/2.jpg" alt="Pack RazzPro avec 8 recharges" onerror="this.src='https://via.placeholder.com/200x150/1e3c72/ffffff?text=Pack+RazzPro'">
+            </div>
+            <div class="whatsapp-container">
+                <p>Pour passer commande, cliquez sur le bouton ci-dessous :</p>
+                <a href="https://wa.me/237656874334?text=Bonjour%2C%20je%20souhaite%20passer%20commande%20d%27un%20pack%20Rasoir%205%20lames%20RazzPro%20(4500%20FCFA)." class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+                </a>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">Ou contactez-nous directement au <strong>656874334</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page remerciement -->
+    <div id="merci" class="section hidden">
+        <div class="container">
+            <div class="logo">RazzPro</div>
+            <div class="galerie">
+                <img src="https://i.ibb.co/spyRfRBm/pack1revu.jpg" alt="Rasoir 5 lames RazzPro" onerror="this.src='https://via.placeholder.com/200x150/1e3c72/ffffff?text=Merci+RazzPro'">
+            </div>
+            <h1>Merci pour votre commande, Graham !</h1>
+            <p>Nous vous contacterons très vite sur WhatsApp au <strong>656874334</strong> pour finaliser votre commande et organiser la livraison.</p>
+            <p>Livraison à Douala : frais à votre charge. Expédition dans d'autres villes : frais à votre charge.</p>
+            <p>Partagez cette offre avec vos amis et profitez d'avantages exclusifs !</p>
+            <button class="btn" onclick="goTo('landing')">Retour à l'accueil</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 RazzPro. Tous droits réservés. | <a href="https://www.shopinwebcrea.com" target="_blank">Visitez notre site : www.shopinwebcrea.com</a></p>
+    </div>
+
+    <script>
+        function goTo(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
